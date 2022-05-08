@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 # web scraping job description data from indeed.com USA version
 
-CONFIG_PATH = "configs/web-scrape.yaml"
+CONFIG_PATH = "src/main/configs/web-scrape.yaml"
 base_url = "https://www.indeed.com/viewjob?jk="
 
 #to define ones all the pages to get
