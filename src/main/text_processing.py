@@ -15,7 +15,7 @@ def main():
     for job_name in jobs:
         complete_link = path_texts+"/"+job_name
         for filename in os.listdir(complete_link):
-            text = str(open(complete_link+"/"+str(filename)).readlines())
+            text = str(open(complete_link+"/"+str(filename), encoding = "ISO-8859-1").readlines())
             text_tokens = word_tokenize(text)
             #bring to lower
             text_tokens_lower = [token.lower() for token in text_tokens]
