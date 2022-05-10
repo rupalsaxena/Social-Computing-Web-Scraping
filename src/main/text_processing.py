@@ -12,7 +12,7 @@ jobs = ['plumber', 'computer-engineer', 'nurse', 'oil-field-engineer',
 path_texts = "data/raw_job_data"
 
 def main():
-    for job_names in jobs:
+    for job_name in jobs:
         complete_link = path_texts+"/"+job_name
         for filename in os.listdir(complete_link):
             text = str(open(complete_link+"/"+str(filename)).readlines())
