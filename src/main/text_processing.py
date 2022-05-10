@@ -17,10 +17,17 @@ def main():
         for filename in os.listdir(complete_link):
             text = str(open(complete_link+"/"+str(filename)).readlines())
             text_tokens = word_tokenize(text)
-            tokens_without_sw = [word for word in text_tokens if not word in stopwords.words()]
+            #bring to lower
+            text_tokens_lower = [token.lower() for token in text_tokens]
+            
+            #additional words to remove
+            non_words_to_add = ["a", "the"]
+            non_words_nltk = stopwords.words()
+            non_words_nltk.extend(non_words_to_add)
+            tokens_without_sw = [word for word in text_tokens_lower if not word in non_words_nltk]
             
             # this keeps empty spaces punctuations marks
-            #I put extra filtering for jsut words. this removes also numbers which I think is valid
+            #I put extra filtering for just words. this removes also numbers which I think is valid
             words = list(filter(lambda x: x.isalpha(), tokens_without_sw))
             
     
