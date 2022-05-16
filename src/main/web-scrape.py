@@ -1,6 +1,7 @@
 
 import os
 import yaml
+import random
 import requests
 import numpy as np
 from bs4 import BeautifulSoup
@@ -11,9 +12,7 @@ CONFIG_PATH = "src/main/configs/web-scrape.yaml"
 base_url = "https://www.indeed.com/viewjob?jk="
 
 #to define ones all the pages to get
-pages_results = np.array(range(10))*10
-
-
+pages_results = np.array(range(40))*10
 
 def read_yaml(path):
     with open(path, "r") as f:
@@ -24,7 +23,6 @@ def write_text(content, name):
         f.write(content)
 
 def main():
-    
     job_categories = read_yaml(CONFIG_PATH)
 
     # looping for all job categories in data
@@ -49,7 +47,9 @@ def main():
     
       #some ids are duplicated
       full_html_list = list(set(full_html_list))
-            # for each job in list
+      full_html_list = random.sample(full_html_list, 300)
+      
+    # for each job in list
       for element in full_html_list:
                 # get job ids from scraped data
                 job_id = element.attrs["data-jk"]
