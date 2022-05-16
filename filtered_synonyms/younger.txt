@@ -1,17 +1,17 @@
 ace
 adaptable
 adept
-Better Ability learn
+better ability learn
 quick learner
 risk taking
 risk-taking
-Creative
-Better Memory
-Retentive
-Dependable 
-Unexperienced
-Productive
-Technophile
+creative
+better memory
+retentive
+dependable 
+unexperienced
+productive
+technophile
 tenacious
 strong
 powerful
@@ -19,6 +19,6 @@ better with technology
 tech-savvy
 tech savvy
 Innovative
-Energetic
+energetic
 fit
 healthy
