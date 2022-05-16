@@ -1,12 +1,19 @@
 import os
-
+import pandas as pd
 
 def arrays_of_stereotypes():
-    directory = '/Users/oroikon/PycharmProjects/Social-Computing-Research-Project/filtered_synonyms'
+    directory = 'filtered_synonyms'
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
-            filename = str.split()
-            print(filename)
+            str = open('filtered_synonyms/'+filename, 'r').read()
+            splitted = str.split()
+            category_name = os.path.basename(filename).replace(".txt","")
+            d = {category_name: splitted}
+            df = pd.DataFrame(data=d)
+            print(df)
+
+def percentages_stereotype_categories():
+
 
 
 
