@@ -15,6 +15,7 @@ def arrays_of_stereotypes():
 
 
 def percentages_stereotype_categories():
+    stereotype_df = arrays_of_stereotypes()
     # open raw_job_data folder
     directory = 'data/raw_job_data'
     for root, subdirectories, files in os.walk(directory):
