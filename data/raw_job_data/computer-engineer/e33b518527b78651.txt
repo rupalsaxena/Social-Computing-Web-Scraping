@@ -1,0 +1,20 @@
+ 
+In addition to pushing the boundaries of existing deep learning technologies, you will be solving complex algorithmic challenges that deep learning cannot. You will be working with a world-class team of engineers to deploy a new wave of AI products that work out-of-the-box across domains without weeks or months of data collection. 
+Recent Projects: 
+Minimum Qualifications: 
+Benefits: 
+‍ 
+Writing a machine learning pipeline from scratch based on a paper released on Arxiv. This project included developing the dataset loader, augmentation functions, deep learning model, and loss functions — the whole nine yards. And that was just a Tuesday. 
+Developing a new probabilistic model to track critical work in manufacturing facilities while ignoring day-to-day variations 
+Constraining the problem space creatively in order to develop a practical solution that can be deployed across facilities with very little fine tuning 
+Working on novel labeling methods with the data infrastructure team to reduce labeling costs while improving model outputs 
+Implementing new loss functions or model architectures so cool they would make waves at CVPR, when you deign to eventually share them 
+Using the temporal and consistent nature of video to reduce false positives in a deep learning model while exploring what’s possible in unsupervised object detection 
+Have a research and problem solving background given complex problems 
+Have built or worked on deep learning training pipelines 
+Have worked on robotics and computer vision algorithms (ex: frame transformations, camera calibration, optical flow, etc.) 
+Have the ability to quickly hit the ground running and build training pipelines 
+Be passionate about AI and is ready to take risks in a fast-paced startup environment 
+Competitive compensation and equity packages 
+Health, vision and dental insurance (100% coverage for employees, 50% for dependents) 
+Flexible vacation schedule

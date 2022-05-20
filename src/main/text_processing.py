@@ -1,7 +1,7 @@
-import os
-#import nltk
-#nltk.download('punkt')
-#nltk.download('stopwords')
+import os 
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
@@ -28,8 +28,17 @@ def main():
             
             # this keeps empty spaces punctuations marks
             #I put extra filtering for just words. this removes also numbers which I think is valid
-            words = list(filter(lambda x: x.isalpha(), tokens_without_sw))
+            words = list(filter(lambda x: x.isalpha() and len(x) > 3 , tokens_without_sw))
+            filtered_ad = (" ".join(words)
+            )
             
+            if len(words) > 0:
+                file = "data/preprocessed_data" + "/" + str(job_name)  + "/" + filename
+                print(file)
+                with open(file, "w", encoding = "ISO-8859-1") as f:
+                    f.write(filtered_ad)
+    
+            run_description = False            
     
 if __name__ == "__main__":
     main()
