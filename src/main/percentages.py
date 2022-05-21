@@ -28,7 +28,7 @@ def arrays_of_stereotypes(stereotype):
 
 
 def percentages_stereotype_categories():
-
+    
     # open preprocessed_job_data folder
     directory = 'data/preprocessed_data' 
     for root, subdirectories, files in os.walk(directory):
@@ -71,7 +71,8 @@ def percentages_stereotype_categories():
                     write percentages in a csv file with the same name as the file of the job ad but, with added
                     _percentages
                     """
-                    with open(filename[:-4] + "_percentages.csv", 'w', newline="") as f:
+                    file = "percentages" + "/" + subdirectory + '/' + filename[:-4] + "_percentages.csv"
+                    with open(file, 'w', newline="") as f:
                         for key in dictionary.keys():
                             #print(key, dictionary[key])
                             f.write("%s, %s\n" % (key, dictionary[key])) 
