@@ -5,6 +5,7 @@ measured
 reliable
 dependable
 honest
+reliable
 experienced
 seasoned
 long-serving
@@ -15,7 +16,6 @@ old-school
 traditional
 solid
 steady
-secure
 homely
 sensible
 warm
